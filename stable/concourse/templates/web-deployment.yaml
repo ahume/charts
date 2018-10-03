@@ -325,7 +325,6 @@ spec:
             {{- end }}
             {{- if .Values.concourse.web.vault.insecureSkipVerify }}
             - name: CONCOURSE_VAULT_INSECURE_SKIP_VERIFY
-              value: {{ .Values.concourse.web.vault.insecureSkipVerify }}
             {{- end }}
             {{- if .Values.concourse.web.vault.maxLease }}
             - name: CONCOURSE_VAULT_MAX_LEASE
